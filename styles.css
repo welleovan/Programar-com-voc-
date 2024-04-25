@@ -1,5 +1,12 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: black; /* Define o fundo preto */
+  color: white; /* Define a cor do texto como branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 h1 {
@@ -7,9 +14,12 @@ h1 {
 }
 
 .game-container {
-  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .row {
@@ -19,7 +29,7 @@ h1 {
 .cell {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid white; /* Borda branca */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +42,52 @@ h1 {
   margin-top: 20px;
   font-size: 24px;
 }
-#tabuleiro {
-  display: none;
+
+#players {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#players input, #players button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: white; /* Fundo branco para inputs e botão */
+  color: black; /* Texto preto para inputs e botão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reiniciarBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white; /* cor do fundo */
+  color: black; /* cor do texto */
+  border: none;
+  border-radius: 25px; /*  formato arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#reiniciarBtn:hover {
+  background-color: #e0e0e0; /* Mudança de cor ao passar o mouse */
+}
+
+#iciarBtn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white; /* cor do fundo */
+  color: black; /* cor do texto */
+  border: none;
+  border-radius: 25px; /*  formato arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#iniciarBtn:hover {
+  background-color: #e0e0e0; /* Mudança de cor ao passar o mouse */
 }
